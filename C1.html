@@ -8,15 +8,8 @@
   <title>Chapitre 1 : Etude de l&apos;organisme du stage </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    img {
-      transition: transform 0.5s;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     #introduction,
     #presentation,
     #organigramme,
@@ -30,8 +23,6 @@
 <body>
   <header class="py-4">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-      <a href="index.html" class="btn bg-primary text-white position-fixed ms-2" data-bs-toggle="tooltip"
-        data-bs-placement="right" title="Retour">🢀 Accueil</a>
       <div class="container">
         <a class="navbar-brand text-uppercase fw-bold" href="#">
           Etude de l&apos;organisme du stage
@@ -65,9 +56,8 @@
   </header>
   <main>
 
-
-
-    <section class="my-5" id="introduction">
+    <!-- Introduction -->
+    <section class="py-5" id="introduction">
       <div class="container">
         <div class="row gy-4 align-items-center">
           <div class="col-12 col-md-6">
@@ -78,15 +68,11 @@
         </div>
       </div>
     </section>
-
-    <section id="presentation" class="my-5 bg-light">
+    <!-- Presentation -->
+    <section id="presentation" class="py-5 bg-light">
       <div class="container">
         <div class="row gy-4 align-items-center">
           <div class="col-12 col-md-6">
-            <br />
-            <br />
-            <br>
-
             <h2 class="fw-light"><strong> II. Présentation de l&apos;organisme </strong> </h2><br>
             <p> Les Ciments de Bizerte (CB) est une société anonyme qui opère dans le secteur des liants depuis plus des
               cinquantaines. Elle été créé en 1950, dans une région appelée BAIE de SABRA.
@@ -116,95 +102,93 @@
             <br>
           </div>
           <div class="col-12 col-md-6 align-items-center" style="padding:20px">
-            <img src="img/c1/1.jpg" alt="Archives nationales" width="90%" height=600px" class="rounded-3 shadow">
+            <img src="img/c1/1.jpg" alt="Archives nationales" height="400px" class="rounded-3 shadow center-image">
           </div>
         </div>
       </div>
     </section>
-
-    <section id="activity2" class="my-5 bg-light">
+    <!-- Organigramme -->
+    <section id="organigramme" class="py-5">
       <div class="container">
         <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="img/c1/2.jpg" alt="Organigramme de l&apos;organisme" width="50%" height="380px"
+              class="rounded-3 shadow center-image">
+          </div>
           <div class="col-12 col-md-6">
             <h2 class="fw-light"><strong> III. Organigramme de l&apos;organisme </strong> </h2><br>
             <p>L&apos;organigramme de la SCB représente par la figure suivante : </p>
           </div>
-
-          <div class="col-12 col-md-6 align-items-center" style="padding:20px">
-            <img src="img/c1/2.jpg" alt="Organigramme de l&apos;organisme" width="100%" height="380px"
-              class="rounded-3 shadow">
-          </div>
-        </div>
-        <br><br>
-      </div>
-    </section>
-
-    <section id="activity3" class="my-5 ">
-      <div class="container">
-        <div class="row gy-4 align-items-center">
-          <div class="col-12 col-md-6">
-            <h2 class="fw-light"><strong> IV. Description du service de stage </strong> </h2><br>
-            <p> Le système informatique de la société CB est réparti en trois secteurs une dans la direction générale à
-              Tunis, une autre dans l’usine à Bizerte et la dernière dans l’administration ou nous avons effectué ce
-              stage. </p>
-            <p>Le département informatique est le seul responsable du système informatique installé dans
-              l’administration et dans l’usine, à Bizerte ainsi que dans la Direction Générale à Tunis. Il s’occupe
-              notamment, de l’ancien système Unisys et celui de la micro-informatique.
-            </p>
-            <p>Il dispose d’une architecture informatique ouverte en protocole et en logique. Il est composé
-              actuellement de: </p>
-            <ul>
-              <li>
-                <h5>Un service d’étude et développement:</h5>
-                <p> Il est composé de deux chefs de projet. Il assure le développement des nouveaux modules ou
-                  applications et
-                  la maintenance des applications en exploitation en vue de corriger les anomalies ou d’implémenter des
-                  nouveaux besoins exprimés par les utilisateurs.</p>
-              </li>
-              <li>
-                <h5> Un service d’exploitation:</h5>
-                <p> Il est composé d’un chef de service et de deux opérateurs. Il est chargé de la maintenance et de
-                  l’exploitation des applications ainsi que l’infrastructure matérielle et assure le traitement de
-                  l’information.</p>
-              </li>
-              <li>
-                <h5> Une cellule bureautique:</h5>
-                <p>
-                  Elle est représentée par une seule personne. Elle répond aux besoins du personnel de l’entreprise en
-                  matière
-                  des taches bureautique.</p>
-              </li>
-              <li>
-                <h5> Un chef Département Informatique:</h5>
-                <p> Il supervise les deux services et assure la coordination avec les différents centres d’activité de
-                  l’entreprise.</p>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
 
-    <section id="conclusion" class="my-5">
+    <!-- Description -->
+    <section id="description" class="py-5 bg-light ">
       <div class="container">
         <div class="row gy-4 align-items-center">
-          <div class="col-12 col-md-6">
-            <br />
-            <br />
-            <br>
-
-            <h2 class="fw-light"><strong> V. Conclusion</strong></h2><br>
-            <p> A Au niveau du ce chapitre, nous avons appris des nouveaux services et des méthodes de travail efficaces
-              qui améliorent le milieu et nous allons par la suite décrire les différentes tâches que nous avons
-              effectué.
-          </div>
+          <h2 class="fw-light"><strong> IV. Description du service de stage </strong> </h2><br>
+          <p> Le système informatique de la société CB est réparti en trois secteurs une dans la direction générale à
+            Tunis, une autre dans l&apos;usine à Bizerte et la dernière dans l&apos;administration ou nous avons
+            effectué ce
+            stage. </p>
+          <p>Le département informatique est le seul responsable du système informatique installé dans
+            l&apos;administration et dans l&apos;usine, à Bizerte ainsi que dans la Direction Générale à Tunis. Il
+            s&apos;occupe
+            notamment, de l&apos;ancien système Unisys et celui de la micro-informatique.
+          </p>
+          <p>Il dispose d&apos;une architecture informatique ouverte en protocole et en logique. Il est composé
+            actuellement de: </p>
+          <ul>
+            <li>
+              <h5>Un service d&apos;étude et développement:</h5>
+              <p> Il est composé de deux chefs de projet. Il assure le développement des nouveaux modules ou
+                applications et
+                la maintenance des applications en exploitation en vue de corriger les anomalies ou d&apos;implémenter
+                des
+                nouveaux besoins exprimés par les utilisateurs.</p>
+            </li>
+            <li>
+              <h5> Un service d&apos;exploitation:</h5>
+              <p> Il est composé d&apos;un chef de service et de deux opérateurs. Il est chargé de la maintenance et
+                de
+                l&apos;exploitation des applications ainsi que l&apos;infrastructure matérielle et assure le
+                traitement de
+                l&apos;information.</p>
+            </li>
+            <li>
+              <h5> Une cellule bureautique:</h5>
+              <p>
+                Elle est représentée par une seule personne. Elle répond aux besoins du personnel de l&apos;entreprise
+                en
+                matière
+                des taches bureautique.</p>
+            </li>
+            <li>
+              <h5> Un chef Département Informatique:</h5>
+              <p> Il supervise les deux services et assure la coordination avec les différents centres d&apos;activité
+                de
+                l&apos;entreprise.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Conclusion -->
+    <section id="conclusion" class="py-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <h2 class="fw-light"><strong> V. Conclusion</strong></h2><br>
+          <p> A Au niveau du ce chapitre, nous avons appris des nouveaux services et des méthodes de travail efficaces
+            qui améliorent le milieu et nous allons par la suite décrire les différentes tâches que nous avons
+            effectué.
         </div>
       </div>
 
     </section>
     <center class="my-5"> <button type="button" class="btn btn-secondary "><a href="index.html"
-        class="text-decoration-none text-light">
-        🡸 Page Précédente</a></button>
+          class="text-decoration-none text-light">
+          🡸 Page Précédente</a></button>
       <button type="button" class="btn btn-secondary"><a href="C2.html" class="text-decoration-none text-light">
           Chapitre Suivant 🢂 </a></button>
 
@@ -215,7 +199,7 @@
       <div class="row gy-4 align-items-center">
         <div class="col-12 col-md-4">
           <a class="navbar-brand text-uppercase fw-bold text-light">
-            <span class="bg-primary bg-gradient p-1 rounded-3 ">Marwa</span> Tounsi
+            <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Rapport</span> Marwa Tounsi
           </a>
         </div>
         <div class="col-12 col-md-4 text-md-center">
@@ -227,8 +211,8 @@
     </div>
   </footer>
   <script>
-     const year = `${new Date().getFullYear()}-${new Date().getFullYear() + 1}`
-     document.getElementById('year').textContent = year;
+    const year = `${new Date().getFullYear()}-${new Date().getFullYear() + 1}`
+    document.getElementById('year').textContent = year;
   </script>
 </body>
 
