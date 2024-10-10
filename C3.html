@@ -1,175 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapitre 3 : Infrastructure informatique</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <style>
-      img {
-    transition: transform 0.5s;
-  }
-  
-  img:hover {
-    transform: scale(1.5);
-  }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapitre 2 : Présentation des activités du stage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #introduction,
+    #material,
+    #architecture,
+    #conclusion {
+      scroll-margin-top: 100px;
+    }
+  </style>
 </head>
+
 <body>
-    <header class="py-4">
-      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-                  <a href="index.html" class="btn bg-primary text-white position-fixed ms-2" data-bs-toggle="tooltip"
-             data-bs-placement="right" title="Retour">Main</a>
-          <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold" href="#">
-              <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Infrastructure</span> informatique
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link text-light " href="#introduction">Introduction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light " href="#materiel">Materiel informatique</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light " href="#logiciel">Logiciels utilisés</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light " href=" #conclusion">Conclusion
-                    </a>
-                  </li>
-              </ul>
-            </div>
+  <header class="py-4">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold" href="#">
+          Infrastructure informatique
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light " href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " href="#material">Matériel informatique </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light " href="#architecture">Architecture réseau </a>
+            <li class="nav-item">
+              <a class="nav-link text-light " href="#conclusion">Conclusion</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- introduction -->
+    <section class="my-5" id="introduction">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <h2 class="fw-light"><strong> I.Introduction </strong></h2><br>
+            <p>Dans ce chapitre, je les présente en détail toutes les activités et les tâches du département des TI avec
+              l'aide et sous le contrôle de mon superviseur du stage. </p>
           </div>
-        </nav>
-      </header>
-      <main>
-
-
-
-        <section id="introduction" class="my-5">
-            <div class="container">
-              <div class="row gy-4 align-items-center">
-                <div class="col-12 col-md-6">
-                  <h2 class="fw-light"><strong> I.Introduction </strong></h2><br>
-                  <p>L'établissement des archives nationales possède un parc informatique complet pour garantir la sécurité et la productivité des activités quotidiennes.
-                     Ce parc informatique ou infrastructure informatique désigne l'ensemble des équipements, des logiciels et des services informatiques nécessaires
-                      pour soutenir les activités de l’établissement. Cela peut inclure des ordinateurs, des serveurs, des réseaux, des logiciels de Gestion de Bases 
-                      de Données, des systèmes de stockage de données, des systèmes de téléphonie, etc.
-                      <ul type="none" >
-                        Le réseau des Archives Nationales de Tunisie est composé de :
-<li>-	(97 machines clients ; 5 serveurs ;  6 commutateurs ; 2 firewall  et 2 lignes internet)
-</li><li>-	Les 6 serveurs au sein des Archives Nationales sont :
-</li><li>-	Un serveur antivirus 
-</li><li>-	Un serveur base de données Oracle 11g
-</li><li>-	Un serveur GED / ECM
-</li><li>-	Un serveur Web pour l’application NISAM de gestion des Archives 
-</li><li>-	Un serveur Active Directory (contrôleur de domaines)
-</li><li>-	Un serveur du portail web local
-
-                      </li></ul></p>
-                </div>
-                <div class="col-12 col-md-6">
-                  <img src="img/infra.png" alt="Archives nationales" width="100%" height=500px" class="rounded-3 shadow">
-                </div>
-              </div>
-              <br>
-              <br>
-              
-
-
-
-
-            </div>
-          </section>
-          <section id="materiel" class="my-5 bg-light">
-            <div class="container">
-                <div class="row gy-4 align-items-center">
-                    
-                      <h2 class="fw-light"><strong> II. Matériel informatique  </strong></h2><br>
-                      <p>Le matériel utilisé et que j’ai pu manipuler durant mon stage est le suivant :<ul type="none">
-                       <li> -	Un ordinateur de bureau avec une capacité de 4Go de RAM et un processeur i3 avec un disque dur de 500 Go, en excellent état. 
-                    </li><li> -	Une imprimante laser + un scanner en bonne état
-                    </li><li>-	 6 serveurs (cités en dessus)
-                    </li><li>-	Des caméras de sécurité, un modem, le pare-feu, les commutateurs (ou switchers), les routeurs et les câbles RJ45. 
-                    </li></ul></p>
-            </div>
-          </section>
-
-          <section id="logiciel" class="my-5 ">
-            <div class="container">
-                <div class="row gy-4 align-items-center">
-                    
-                      <h2 class="fw-light"><strong> III. Logiciels utilisés  </strong></h2><br>
-                      <p>Les logiciels utilisés et que j’ai pu manipuler durant mon stage sont les suivants :<ul type="none">
-                       <li> -	System d’exploitation Windows 10.  
-                    </li><li> -	Suite bureautique MS Office 2016, composé des outils tels que Word, Excel et PowerPoint…..
-                    </li><li>- Le logiciel « Oracle VM VirtualBox » qui permet d’expérimenter le système d'exploitation Linux.
-                    </li><li>-	Le simulateur réseau « Cisco Packet Tracer »  qui est utilisé pour la mise en place d'une architecture de réseau complexes.
-
-                    </li><li> -	Les deux commandes PING et IPCONFIG.
-                    </li><li>-	 Le logiciel comme « ManageEngine OpManager» : un outil de gestion du réseau, des serveurs, de la bande passante et de la configuration, de diagnostic des pannes et de dépannage.
-                    </li><li>-	WordPress : C’est un CMS, il est un logiciel libre utilisé pour créer des sites web, blogs ou applications
-
-                    </li><li> -	J’ai travaillé avec XAMPP et phpMyAdmin. XAMPP est un environnement de développement Web qui comprend Apache, MySQL, PHP et Perl..
-                    </li><li>-      Les plugins comme : 
-                        Elementor , Wordfence et SuitePlugins - Login Widget for Ultimate Member
-                
-                    </li></ul></p>
-            </div>
-          </section>
-
-
-
-
-
-
-         
-          <section id="conclusion" class="my-5 ">
-            <div class="container">
-                    <br/>
-                    <br/>
-                    <br>
-
-                  <h2 class="fw-light"><strong> V. Conclusion</strong></h2><br>
-                  <p> Dans ce chapitre, infrastructure informatique j’ai présenté les outils de travail manipule durant mon stage à savoir le matériel utilisé et les logiciels utilisés.</p>
-                <br>
-                <br>
-           
-               <div style="margin-left: 900px">
-                <button type="button" class="btn btn-secondary "><a href="cahpitre2.html" class="text-decoration-none text-light" > chapitre précédent</a></button>
-                <button type="button" class="btn btn-secondary"><a href="index.html #conclusion" class="text-decoration-none text-light" > Conclusion générale </a></button>
-                
-             </div>
-             </section>
-         
-         </main>
-         <footer class="border-top bg-dark">
-          <div class="container py-5">
-            <div class="row gy-4 align-items-center">
-              <div class="col-12 col-md-4">
-                <a class="navbar-brand text-uppercase fw-bold text-light" href="">
-                  <span class="bg-primary bg-gradient p-1 rounded-3 ">Mouadh</span> Farhat
-                </a>
-              </div>
-              <div class="col-12 col-md-4 text-md-center">        
+        </div>
+      </div>
+    </section>
+    <!-- activity1 -->
+    <section id="material" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-light"><strong> II.Matériel informatique </strong> </h2><br>
+        <div class="row gy-4 align-items-center">
+          <!-- Switches -->
+          <div class="col-12 col-md-6">
+            <p><strong>Les switchers </strong> Un switcher est généralement reçoi et répartit les différentes
+              informations sur le réseau informatique de l'entreprise. Cela permet d'améliorer les performances du
+              réseau en consommant moins de bande passante. De plus, le switch contribue à la protection des données
+              informatiques et régulant l'accès aux informations échangées. </p>
           </div>
-              <div class="col-12 col-md-4 text-md-end text-light">
-                      Copyright © 2022/2023
-                </div>
-            </div>
+          <div class="col-12 col-md-6">
+            <img src="img/c3/1.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
           </div>
-        </footer>
-      </body>
-      
-      </html>
+          <!-- Switches -->
+          <div class="col-12 col-md-6">
+            <img src="img/c3/2.png" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+          <div class="col-12 col-md-6">
+            <p><strong>Les firewalls </strong> Un pare-feu est un logiciel et/ou un matériel permettant de faire
+              respecter la politique de sécurité du réseau, celle-ci définissant quels sont les types de communications
+              autorisés sur ce réseau informatique. Il surveille et contrôle les applications et les flux de données.
+            </p>
+          </div>
+          <!-- Servers -->
+          <div class="col-12">
+            <p><strong>Les Serveurs </strong> n serveur est généralement un ordinateur plus puissant que l'ordinateur de
+              bureau habituel. Il est spécialement conçu pour fournir des informations et des logiciels à d'autres
+              ordinateurs qui lui sont reliés via le réseau ou le pare informatique de chaque département.</p>
+            <p>Au sein de l’entreprise, les ciments de Bizerte, le réseau utilisé sont de type Ethernet. Les serveurs se
+              trouvent comme indiqué dans le tableau suivant : </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Classement</th>
+                  <th>Identifiant local</th>
+                  <th>Marque</th>
+                  <th>Modèle</th>
+                  <th>Localité</th>
+                  <th>SO</th>
+                  <th>Fonction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Serveur</td>
+                  <td>ISVW</td>
+                  <td>IBM</td>
+                  <td>IBM System</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Standard edition</td>
+                  <td>Trendmicro Anti-spam</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>NASCBSIEGE</td>
+                  <td>Dell</td>
+                  <td>Power Vault NX</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Entreprise edition x64</td>
+                  <td>Nas de sauvegarde</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>NASCBUSINE</td>
+                  <td>Dell</td>
+                  <td>Power Vault NX</td>
+                  <td>Usine</td>
+                  <td>2003 Entreprise edition x64</td>
+                  <td>Nas de sauvegarde + serveur Ged usine</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SERVER2</td>
+                  <td>HP</td>
+                  <td>ProLiant DL380 G7</td>
+                  <td>Administration Bizerte</td>
+                  <td>2008 R2 Entreprise</td>
+                  <td>Serveur base de données sous Oracle 11g : PGI</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SERVER3</td>
+                  <td>HP</td>
+                  <td>ProLiant ML350 G5</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Standard edition</td>
+                  <td>Citrix</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SERVER5</td>
+                  <td>IBM</td>
+                  <td>IBM Server</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Entreprise edition</td>
+                  <td>GED Lotus</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SERVERCITRIX</td>
+                  <td>HP</td>
+                  <td>HP dx2000 mt</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Standard edition</td>
+                  <td>Serveur Citrix</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SRVBDSECOURS</td>
+                  <td>HP</td>
+                  <td>ProLiant ML350 G5</td>
+                  <td>Administration Bizerte</td>
+                  <td>2008 R2 Entreprise</td>
+                  <td>Serveur Kaspersky siège</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SRV-CLARILOG</td>
+                  <td>HP</td>
+                  <td>ProLiant DL380 G4</td>
+                  <td>Administration Bizerte</td>
+                  <td>2008 Standard</td>
+                  <td>Gestion du parc informatique</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SRV-DC01</td>
+                  <td>IBM</td>
+                  <td>IBM System</td>
+                  <td>Administration Bizerte</td>
+                  <td>2008 R2 Standard</td>
+                  <td>Contrôleur de domaine 1</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SRV-DC02</td>
+                  <td>IBM</td>
+                  <td>IBM System</td>
+                  <td>Usine</td>
+                  <td>2008 R2 Standard</td>
+                  <td>Contrôleur de domaine 1</td>
+                </tr>
+                <tr>
+                  <td>Serveur</td>
+                  <td>SRV-DHCP-WSUS</td>
+                  <td>HP</td>
+                  <td>ProLiant DL380 G4</td>
+                  <td>Administration Bizerte</td>
+                  <td>2003 Standard edition</td>
+                  <td>Serveur DHCP et WSUS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Hub -->
+          <div class="col-12 col-md-6">
+            <img src="img/c3/3.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+          <div class="col-12 col-md-6 ">
+            <p><strong>Les Hubs </strong> Un appareil informatique permettant de concentrer les transmissions
+              Ethernet de plusieurs équipements sur un même support dans un réseau informatique local.
+            </p>
+          </div>
+          <!-- Fibers -->
 
-           
-            
+          <div class="col-12 col-md-6">
+            <p><strong>Les Fibres optiques </strong> La fibre optique permet d’avoir un meilleur débit, améliore la
+              qualité de votre réseau wifi .et donc de télécharger et/ou transférer des données, surfer sur internet,
+              connecter vos objets... tous en même temps et de manière extrêmement fluide et efficace.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/c3/4.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- activity2 -->
+    <section id="activity2" class="my-5 ">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <h2 class="fw-light"><strong> III. Deuxième Activité-Visite au service de maintenance </strong> </h2><br>
+            <p>La visite au service maintenance était dans le but de prendre une idée sur le logiciel de IVARA (GMAO)
+              qui aide les gestionnaires d'installations à suivre tous les horaires des activités d'une organisation
+              afin de réparer et de maintenir la maintenance préventive, surveiller les Commandes de travail, gérer les
+              couts et respecter les normes de conformité.
+            </p>
+            <p>Ce logiciel assure aussi les fonctionnalités suivantes :</p>
+            <ul>
+              <li>Gestion de maintenance assistée par ordinateur qui sert à assister les services de Maintenance des
+                entreprises dans leurs missions.</li>
+              <li>Gestion des appels d'offres.</li>
+              <li>Gestion de stocks.</li>
+              <li>Gestion des personnels et le planning.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/c2/1.jpg" alt="" width="100%" height="400px" class="rounded-3 shadow">
+          </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <!-- activity3 -->
+    <section id="activity3" class="my-5 bg-light">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-md-6">
+            <h2 class="fw-light"><strong> IV. Troisième Activité-Visite au service de réparation et supervision
+              </strong> </h2><br>
+
+            <p> Durant cette visite les encadreurs m&apos;ont présenté les applications pour la supervision du réseau et
+              des
+              postes de travail de la société tels qu'OP Manager, KASPERSKY, IBM Notes et Active Directory.
+            </p>
+            <p>
+              Parmi ces programmes utilises par le service de répartition on trouve :
+            </p>
+          </div>
+          <div class="col-12 col-md-6"></div>
+          <!-- OpManager -->
+          <div class="col-12 col-md-6">
+            <p><strong>Op Manager plus </strong> est une solution de gestion des opérations informatiques qui surveille
+              de manière
+              proactive le réseau en termes de performances, de stockage, de bande passante, de changements de
+              configuration, de conformité et de sécurité. </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/c2/2.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+          <!-- IBM Notes -->
+          <div class="col-12 col-md-6">
+            <img src="img/c2/3.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+          <div class="col-12 col-md-6">
+            <p><strong>IBM Notes</strong> est un logiciel de travail collaboratif, utilisé dans des entreprises ou des
+              administrations
+              pour gérer les projets, les courriels et les échanges d'informations autour d'une base commune. A
+              l'origine nommé IBM Lotus Notes, il est rebaptisé sous son nouveau nom depuis la version 9 </p>
+          </div>
+          <!-- Kaspersky -->
+          <div class="col-12 col-md-6">
+            <p>
+              <strong>Kaspersky</strong> est solution antivirale dotée de fonctions classiques de protection telles
+              que :
+            </p>
+            <ul>
+              <li>Mise en mémoire.</li>
+              <li>Analyse de courriels.</li>
+              <li>Analyse des fichiers compresses.</li>
+              <li>Défense proactive, empêchant notamment l'installation de toolkits.</li>
+              <li>Analyse heuristique.</li>
+              <li>Protection contre les logiciels espions, les virus, autres vers et cheveux de Troie.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="img/c2/4.png" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+
+          <!-- Active Directory -->
+          <div class="col-12 col-md-6">
+            <img src="img/c2/5.jpg" class="rounded-3 shadow center-image">
+            <br><br><br>
+          </div>
+          <div class="col-12 col-md-6">
+            <p><strong>Active Directory </strong> est un système qui sert à stocker des informations d'un réseau
+              d'ordinateurs. Il permet aux utilisateurs d&apos;utiliser n&apos;importe quel poste du réseau tout en
+              gardant ses
+              configurations. </p>
+          </div>
+        </div>
+    </section>
+
+    <section id="conclusion" class="my-5">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+            <br />
+            <br />
+            <br>
+
+            <h2 class="fw-light"><strong> VI. Conclusion</strong></h2><br>
+            <p> Les ciments de Bizerte se déploient toujours des actions d&apos;amélioration de la qualité de ses
+              services,
+              via la mise en place d&apos;applications informatiques intégrées niveau du réseau.
+        </div>
+      </div>
+      <center class="my-5"> <button type="button" class="btn btn-secondary "><a href="C2.html"
+            class="text-decoration-none text-light">
+            🡸 Page Précédente</a></button>
+        <button type="button" class="btn btn-secondary"><a href="index.html" class="text-decoration-none text-light">
+            Fin 🢂 </a></button>
+
+      </center>
+    </section>
+
+
+
+  </main>
+  <footer class="border-top bg-dark">
+    <div class="container py-5">
+      <div class="row gy-4 align-items-center">
+        <div class="col-12 col-md-4">
+          <a class="navbar-brand text-uppercase fw-bold text-light">
+            <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Rapport</span> Marwa Tounsi
+          </a>
+        </div>
+        <div class="col-12 col-md-4 text-md-center">
+        </div>
+        <div class="col-12 col-md-4 text-md-end text-light">
+          Copyright © <span id="year"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const year = `${new Date().getFullYear()}-${new Date().getFullYear() + 1}`
+    document.getElementById('year').textContent = year;
+  </script>
+</body>
+
+</html>
